@@ -100,11 +100,7 @@ def face_detect(images):
 			x1 = max(0, rect[0] - padx1)
 			x2 = min(image.shape[1], rect[2] + padx2)
 
-			if x2 - x1 >= image.shape[1] // 8 or y2 - y1 >= image.shape[0] // 8:
-				x2 = 1
-				x1 = 0
-				y2 = 1
-				y1 = 0
+
 
 
 		results.append([x1, y1, x2, y2])

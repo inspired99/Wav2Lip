@@ -90,9 +90,9 @@ def face_detect(images):
 	for rect, image in zip(predictions, images):
 		if rect is None:
 			y1 = 0
-			y2 = image.shape[0]
+			y2 = 1
 			x1 = 0
-			x2 = image.shape[1]
+			x2 = 1
 		else:
 
 			y1 = max(0, rect[1] - pady1)
